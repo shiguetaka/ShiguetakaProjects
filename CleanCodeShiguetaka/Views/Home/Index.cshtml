@@ -1,0 +1,121 @@
+﻿@{
+    ViewBag.Title = "Clean Code Shiguetaka";
+}
+
+<div class="jumbotron">
+    <h2>Poor Names / Nomes pobres</h2>
+    @*<h1>ASP.NET</h1>
+        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+        <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>*@
+</div>
+
+<div class="row">
+    <div class="col-md-8">
+        <p>
+            //errado<br />
+            <b>SqlDataReader dr1;</b><br />
+            //correto<br />
+            <b>dataReader / reader</b>
+        </p>
+        <p>
+            //errado<br />
+            <b>int od;</b><br />
+            //correto<br />
+            <b>overdueDays</b>
+        </p>
+        <p>
+            //errado<br />
+            <b>void Button1_Click();</b><br />
+            //correto<br />
+            <b>CheckAvailability_Click()</b>
+        </p>
+        <p>
+            //errado<br />
+            <b>class Page1 {}</b><br />
+            //correto<br />
+            <b>ViewCustomerPage</b>
+        </p>
+        <p>
+            <h2>Meaningless Names / nomes sem sentido</h2>
+        </p>
+        <p>
+            //errado<br />
+            <b>void BeginCheckFunctionality_StoreClientSideCheckboxIDsArray();</b><br />
+            //correto<br />
+            <b>contryNames</b>
+        </p>
+        <p>
+            <h2>Names with Encodings / Nomes com codificações</h2>
+        </p>
+        <p>
+            //errado - Hungarian notation não é utilizado mais<br />
+            <b>int iMaxRequests;</b><br />
+            //correto<br />
+            <b>maxRequests</b>
+        </p>
+        <p>
+            <h2>Ambiguous Names / Nomes ambíguos</h2>
+        </p>
+        <p>
+            //errado<br />
+            <b>bool MultiSelect() {} </b><br />
+            <b>int? incidentNAmeId;</b><br />
+        </p>
+        <p>
+            <h2>Noisy Names / Nomes sujos</h2>
+        </p>
+        <p>
+            //errado<br />
+            <b>Customer theCustomer </b><br />
+            <b>List<Customer> listOfApprovedCustomers;</b><br />
+            //correto<br />
+            <b>customer</b><br />
+            <b>approvedCustomers</b>
+        </p>
+        <p>
+            <h2>Inconsistent Naming Conventions / Convensão de nomes inconsistentes</h2>
+        </p>
+        <p>
+            //errado<br />
+            <b>Customer GetCustomer(int _id);</b><br />
+            <b>Customer saveCustomer(Customer Customer);</b><br />
+            <b>private int customerId</b><br />
+            //correto<br />
+            <b>public class Customer</b><br />
+            <b>{</b><br />
+            <b>private int _id;</b><br />
+            <b>public string Name { get; set; }</b><br />
+            <b>public void Charge(int amount)</b><br />
+            <b>{</b><br />
+            <b>var tax = 0;</b><br />
+            <b>}</b><br />
+            <b>}</b>
+        </p>
+        <p>
+            <h2>Tips / Dicas</h2>
+        </p>
+        <b>Not too short, not too long. / Não muito curto, não muito longo</b><br />
+        <b>Meaningful / Significativo</b><br />
+        <b>Reveal intention / Revelar a intenção</b><br />
+        <b>Chosen from problem domain. / </b><br />
+    </div>
+    @*<div class="col-md-4">
+            <h2>Getting started</h2>
+            <p>
+                ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+                enables a clean separation of concerns and gives you full control over markup
+                for enjoyable, agile development.
+            </p>
+            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Get more libraries</h2>
+            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
+            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-4">
+            <h2>Web Hosting</h2>
+            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+            <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        </div>*@
+</div>
